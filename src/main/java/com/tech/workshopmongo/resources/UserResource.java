@@ -1,6 +1,6 @@
 package com.tech.workshopmongo.resources;
 
-import com.tech.workshopmongo.domain.entities.User;
+import com.tech.workshopmongo.domain.User;
 import com.tech.workshopmongo.dto.UserDTO;
 import com.tech.workshopmongo.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

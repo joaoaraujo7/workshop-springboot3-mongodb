@@ -1,4 +1,4 @@
-package com.tech.workshopmongo.domain.entities;
+package com.tech.workshopmongo.domain;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

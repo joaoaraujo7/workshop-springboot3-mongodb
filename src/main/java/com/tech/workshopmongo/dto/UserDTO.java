@@ -1,6 +1,6 @@
 package com.tech.workshopmongo.dto;
 
-import com.tech.workshopmongo.domain.entities.User;
+import com.tech.workshopmongo.domain.User;
 
 import java.io.Serial;
 import java.io.Serializable;

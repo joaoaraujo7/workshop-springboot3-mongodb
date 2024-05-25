@@ -1,6 +1,6 @@
 package com.tech.workshopmongo.services;
 
-import com.tech.workshopmongo.domain.entities.User;
+import com.tech.workshopmongo.domain.User;
 import com.tech.workshopmongo.dto.UserDTO;
 import com.tech.workshopmongo.repositories.UserRepository;
 import com.tech.workshopmongo.services.exceptions.ObjectNotFoundException;
