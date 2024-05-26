@@ -38,8 +38,8 @@ public class TestConfig implements CommandLineRunner {
 
         userRepository.saveAll(Arrays.asList(user1, user2, user3));
 
-        Post post1 = new Post(null, LocalDate.parse("21/05/2024", dtf), "Partiu viagem", "Vou viajar para São Paulo. Abraços!", new AuthorDTO(user1));
-        Post post2 = new Post(null, LocalDate.parse("04/02/2024", dtf), "Bom dia", "Acordei feliz hoje!", new AuthorDTO(user1));
+        Post post1 = new Post(null, LocalDate.parse("21/03/2018", dtf), "Partiu viagem", "Vou viajar para São Paulo. Abraços!", new AuthorDTO(user1));
+        Post post2 = new Post(null, LocalDate.parse("23/03/2018", dtf), "Bom dia", "Acordei feliz hoje!", new AuthorDTO(user1));
 
         CommentDTO comment1 = new CommentDTO("Boa viagem mano!", LocalDate.parse("21/03/2018", dtf), new AuthorDTO(user1));
         CommentDTO comment2 = new CommentDTO("Aproveite!", LocalDate.parse("22/03/2018", dtf), new AuthorDTO(user2));
