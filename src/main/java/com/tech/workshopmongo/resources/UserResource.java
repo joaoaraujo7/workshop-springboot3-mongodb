@@ -1,8 +1,10 @@
 package com.tech.workshopmongo.resources;
 
+import com.tech.workshopmongo.domain.Post;
 import com.tech.workshopmongo.domain.User;
 import com.tech.workshopmongo.dto.UserDTO;
 import com.tech.workshopmongo.services.UserService;
+import jakarta.websocket.server.PathParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -51,5 +53,11 @@ public class UserResource {
         User user = userService.fromDTO(userDTO);
         userService.update(id, user);
         return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping("/{id}/posts")
+    public ResponseEntity<List<Post>> findPosts(@PathVariable String id) {
+        User user = userService.findById(id);
+        return ResponseEntity.ok().body(user.getPosts());
     }
 }
