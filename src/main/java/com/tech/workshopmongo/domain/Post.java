@@ -24,7 +24,7 @@ public class Post implements Serializable {
     private String title;
     private String body;
     private AuthorDTO author;
-    private final List<CommentDTO> comments = new ArrayList<>();
+    private List<CommentDTO> comments = new ArrayList<>();
 
     public Post() {
     }
