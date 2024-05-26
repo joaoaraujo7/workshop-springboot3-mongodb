@@ -4,7 +4,6 @@ import com.tech.workshopmongo.domain.Post;
 import com.tech.workshopmongo.domain.User;
 import com.tech.workshopmongo.dto.UserDTO;
 import com.tech.workshopmongo.services.UserService;
-import jakarta.websocket.server.PathParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
